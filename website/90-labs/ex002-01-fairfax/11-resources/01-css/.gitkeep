@@ -1,0 +1,22 @@
+# *******************************************************************************
+# Title :          FOLDER PLACEHOLDER                                    .GITKEEP
+# *******************************************************************************
+# 
+# DETAILS
+# 
+# This is an empty placeholder file.
+# 
+# The Git and GitHub version control system will always ignore empty folders and
+# will exclude them from the version control repository.
+# 
+# With website development it is important to maintain the correct folder 
+# structure and the inclusion of empty folders within that structure is
+# necessary.
+# 
+# The purpose of this file is to force Git and GitHub to include folders that 
+# would otherwise be empty and thus not included in the repository.
+# 
+# There is a somewhat unofficial convention within the Git community that 
+# such files are called .gitkeep.
+# 
+# -------------------------------------------------------------------------------

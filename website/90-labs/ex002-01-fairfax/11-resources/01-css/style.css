@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #fbfaf6;
+    color: #404030;
+    font-family: "Tinos";
+    font-weight: 400;
+    font-size: 23.5px;
+}
+
+body {
+    max-width: 1276px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    background-color: #fff;
+    border: 1px solid #ededed;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Source Sans 3";
+    font-weight: 500;
+    font-size: 180%;
+    color: #1C2F4B;
+    line-height: 135%;
+    margin: 1rem 0;
+}
+
+p {
+    margin-bottom: 1.2rem;
+    line-height: 135%;
+    color: #404030;
+    hyphens: auto;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #4C6C9C;
+    text-decoration: none;
+    font-family: "Source Sans 3";
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+a:link, a:visited {transition: background-color 0.2s}
+a:hover, a:active {background-color: #f8f8f8;}
+
+
+.aside-head h2 {
+    font-family: "Tinos";
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.35rem;
+    text-align: right;
+}
+
+.fig {
+    font-family: "Source Sans 3";
+    font-size: 0.6rem;
+    text-align: center;
+    margin: 1.2rem 0;
+}
+
+/* SPAN STYLES */
+.first-use {font-family: "Tinos"; font-style: italic;} 
+
+.sans {font-family: "Source Sans 3"; font-weight: 350; font-size: 98%;}
+
+/* GRID ARRANGEMENT */
+.rg-row {margin: 0 auto;}
+.rg-row:after {content: ""; display: table; clear: both;}
+
+.rg-col { display: block; float: left; margin: 0 1.5%;}
+
+.rg-span1-5 {min-height: 1px; width: 17.24%;}
+.rg-span3-5 {min-height: 1px; width: 56.5%;}
