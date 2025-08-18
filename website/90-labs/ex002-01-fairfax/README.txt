@@ -9,7 +9,7 @@ File                  Path                         Size      Details            
 --------------------------------------------------------------------------------------------------------------------
 README.txt            root                          3KB      This file (created)                             ADD
  
-index.html            root                          5KB      Main HTML file for example page                 ADD
+index.html            root                          6KB      Main HTML file for example page                 ADD
                                                              First release (file created)
 --------------------------------------------------------------------------------------------------------------------
 style.css             \11-resources\01-css          2KB      Main CSS file for example page                  ADD
