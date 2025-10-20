@@ -1,0 +1,40 @@
+# Node modules (if using Node.js for tooling like npm, webpack)
+node_modules/
+ 
+# Build/dist folders (compiled assets)
+dist/
+build/
+ 
+# Logs
+**/*.log
+npm-debug.log*
+ 
+# Environment files (sensitive info)
+.env
+ 
+# OS or editor-specific files
+.DS_Store
+Thumbs.db
+**/*.swp
+**/*.swo
+ 
+# Temporary files
+**/*.tmp
+tmp/
+temp/
+ 
+# Ignore all minified JS and CSS, but keep specific ones if needed
+**/*.min.js
+**/*.min.css
+!keep.min.js     # Example: track keep.min.js even if minified
+ 
+# Ignore cache or package lock 
+package-lock.json
+yarn.lock
+ 
+# Ignore coverage reports (if using testing tools)
+coverage/
+ 
+# Ignore all hidden system files starting with . and ending with ~ (ensure .gitignore is not ignored)
+.*~
+!.gitignore
