@@ -1,5 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.masteringgithub.com [NC]
-RewriteRule ^(.*)$ http://masteringgithub.com/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^www\.masteringgithub\.com$ [NC]
+RewriteRule ^ https://masteringgithub.com%{REQUEST_URI} [L,R=301,NE]
 </IfModule>
