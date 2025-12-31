@@ -1,10 +1,11 @@
-<!DOCTYPE html>                                                                 <!-- HTML 5 file -->
+<!DOCTYPE html>
+<!-- HTML 5 file -->
 
 <!-- MASTERING GITHUB (c) 2025
 
 *******************************************************************************
 
-MASTERING GITHUB: Is authored by Michael Gledhill 
+MASTERING GITHUB: Is authored by Michael Gledhill
                   and published by the Practical Series of Publications
                   Published in the United Kingdom
 
@@ -12,177 +13,156 @@ MASTERING GITHUB: Is authored by Michael Gledhill
                   Web:   https://masteringgithub.com
 
 ******************************************************************************* -->
-<html lang="en">                                                                <!-- Declare language                              -->
-    <head>                                                                      <!-- Start of head section                         -->
-        <meta name="pg-rev" content="000.101">
-        <meta charset="utf-8">                                                  <!-- Use unicode char set (< 1024 char from SOF)   -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Make page follow browser width and reset zoom -->
-        <meta name="description" content="Mastering GitHub teaches version control through project-based learning. A free, beginner-friendly guide using real-world examples.">
-        <link rel="canonical" href="https://masteringgithub.com/">              <!-- Set to match page url                         -->
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-        <meta name="title" content="Mastering GitHub: Project-Based Learning for Beginners" >
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://masteringgithub.com/">
-        <meta property="og:title" content="Mastering GitHub: Project-Based Learning for Beginners">
-        <meta property="og:description" content="Mastering GitHub teaches version control through project-based learning. A free, beginner-friendly guide using real-world examples.">
-        <meta property="og:image" content="https://masteringgithub.com/00-comres/11-resources/02-images/social-mgh.png">
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://masteringgithub.com/">
-        <meta property="twitter:title" content="Mastering GitHub: Project-Based Learning for Beginners">
-        <meta property="twitter:description" content="Mastering GitHub teaches version control through project-based learning. A free, beginner-friendly guide using real-world examples.">
-        <meta property="twitter:image" content="https://masteringgithub.com/00-comres/11-resources/02-images/social-mgh.png">
-        <!-- ==========================================================================
+<html lang="en">
+<head>
+    <meta name="pg-rev" content="000.101">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mastering GitHub teaches version control through project-based learning. A free, beginner-friendly guide using real-world examples.">
+    <link rel="canonical" href="https://masteringgithub.com/">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="title" content="Mastering GitHub: Project-Based Learning for Beginners">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://masteringgithub.com/">
+    <meta property="og:title" content="Mastering GitHub: Project-Based Learning for Beginners">
+    <meta property="og:description" content="Mastering GitHub teaches version control through project-based learning. A free, beginner-friendly guide using real-world examples.">
+    <meta property="og:image" content="https://masteringgithub.com/00-comres/11-resources/02-images/social-mgh.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://masteringgithub.com/">
+    <meta property="twitter:title" content="Mastering GitHub: Project-Based Learning for Beginners">
+    <meta property="twitter:description" content="Mastering GitHub teaches version control through project-based learning. A free, beginner-friendly guide using real-world examples.">
+    <meta property="twitter:image" content="https://masteringgithub.com/00-comres/11-resources/02-images/social-mgh.png">
 
+    <!-- **************************************************************************
+         FAVICON
+         ***********************************************************************-->
+    <!-- favicons all platforms -->
+    <link rel="apple-touch-icon" sizes="57x57"         href="00-comres/11-resources/02-images/01-favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60"         href="00-comres/11-resources/02-images/01-favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72"         href="00-comres/11-resources/02-images/01-favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76"         href="00-comres/11-resources/02-images/01-favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"       href="00-comres/11-resources/02-images/01-favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"       href="00-comres/11-resources/02-images/01-favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"       href="00-comres/11-resources/02-images/01-favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"       href="00-comres/11-resources/02-images/01-favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"       href="00-comres/11-resources/02-images/01-favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="00-comres/11-resources/02-images/01-favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32"    href="00-comres/11-resources/02-images/01-favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96"    href="00-comres/11-resources/02-images/01-favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16"    href="00-comres/11-resources/02-images/01-favicons/favicon-16x16.png">
+    <link rel="manifest"                               href="00-comres/11-resources/02-images/01-favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
+    <!-- **************************************************************************
+         HEAD SCRIPT AREA
+         ***********************************************************************-->
+    <!-- jQuery Library -->         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <!-- Waypoints (sticky nav) --> <script src="00-comres/21-global/05-js/jquery.waypoints.min.js" defer></script>
+    <!-- Hyphenator -->             <script src="00-comres/21-global/05-js/hyphenator.js" defer></script>
+    <!-- Lightbox                   <script src="00-comres/21-global/05-js/lightbox.js" defer></script>-->
+    <!-- Prettify (main)            <script src="00-comres/21-global/05-js/run_prettify.js?autoload=true&lang=css" defer></script>-->
+    <!-- MathJax                    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"  defer></script>-->
+    <!-- PS main script -->         <script src="00-comres/11-resources/05-js/script.js" defer></script>
+    <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
+    <!-- PS local scroll script --> <script src="11-mgh-web/01-pages/00-00/05-local-js/scroll.js" defer></script>
 
-*******************************************************************************
-Title :          MASTERING GITHUB
+    <!-- **************************************************************************
+         PRELOAD CSS IMAGES
+         ***********************************************************************-->
+    <link rel="preload" fetchpriority="high" as="image" href="https://masteringgithub.com/00-comres/11-resources/02-images/branch-bg-005.svg" type="image/svg">
+    <link rel="preload" fetchpriority="high" as="image" href="https://masteringgithub.com/00-comres/11-resources/02-images/bottom-circuit-04.webp" type="image/webp">
 
-                 WEBSITE MAIN INDEX                                  INDEX.HTML
-*******************************************************************************
-DETAILS
+    <!-- **************************************************************************
+         HEAD CSS LOAD
+         ***********************************************************************-->
+    <!-- Load PS fonts -->          <link rel="stylesheet" type="text/css" href="00-comres/21-global/03-fonts/ps-fonts.css">
+    <!-- Load TIA fonts -->         <link rel="stylesheet" type="text/css" href="00-comres/21-global/03-fonts/tia-fonts.css">
+    <!-- Load Google fonts -->      <link rel="preconnect" href="https://fonts.googleapis.com/">
+                                   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+                                   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <!-- Normalise -->              <link rel="stylesheet" type="text/css" href="00-comres//21-global/01-css/normalise.css">
+    <!-- Lightbox styles -->        <link rel="stylesheet" type="text/css" href="00-comres/21-global/01-css/lightbox.css">
+    <!-- Ionicons -->               <link rel="stylesheet" type="text/css" href="00-comres/21-global/01-css/ionicons.min.css">
+    <!-- PS grid system -->         <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/grid.css">
+    <!-- PS main styles -->         <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/style.css">
+    <!-- PAL styles -->             <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/style-pal.css">
+    <!-- MGH styles -->             <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/style-mgh.css">
 
-MASTERING GITHUB
+    <!-- ============================================================
+         ADDED: Cookie consent modal stylesheet (external)
+         ============================================================ -->
+    <link rel="stylesheet" href="00-comres/21-global/01-css/cookie-consent.css">
 
-This website is part of the Practical Series of Publications.
+    <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
+    <!-- Code frag highlights       <link rel="stylesheet" type="text/css" href="11-mgh-web/01-pages/00-00/01-local-css/codelines.css">-->
 
-Mastering GitHub, a completely free, beginner-friendly tutorial, simplifies 
-the steep learning curve using real-world examples and step-by-step lessons. 
+    <!--  **************************************************************************
+          Schema data
+          ***********************************************************************-->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Mastering GitHub",
+        "url": "https://masteringgithub.com/",
+        "sameAs": [],
+        "description": "Free, project-based tutorials teaching Git and GitHub for beginners.",
+        "logo": "https://masteringgithub.com/00-comres/11-resources/02-images/mgh-logo_07.svg",
+        "founder": {
+        "@type": "Person",
+        "name": "Michael Gledhill"
+        },
+        "educationalCredentialAwarded": "Project-Based GitHub Mastery"
+    }
+    </script>
 
-You’ll learn how to manage projects with GitHub confidently, even if you've 
-never touched version control before.
+    <!-- ============================================================
+         ADDED: GA4 Consent Mode default (MUST be before GA loads)
+         ============================================================ -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
 
-*******************************************************************************
-MODIFICATION HISTORY:
+    // Default: deny analytics storage (no GA cookies until consent)
+    gtag('consent', 'default', { analytics_storage: 'denied' });
 
-This is a complete summary of all software modifications.
+    // Restore stored choice (if any)
+    const consent = localStorage.getItem('cookie_consent');
+    if (consent === 'accepted') {
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+    }
+    </script>
 
-Date          Issue        Author         Reason for Modification
-*******************************************************************************
-27 May 2025   000.101      M. Gledhill    About h1 changed to h2
-25 Apr 2025   000.100      M. Gledhill    File created
-*************************************************************************** -->
+    <!--  **************************************************************************
+          GOOGLE ANALYTICS
+          ***********************************************************************-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP866HBPND"></script>
+    <script>
+    gtag('js', new Date());
+    gtag('config', 'G-FP866HBPND', { anonymize_ip: true });
+    </script>
 
-
-<!-- **************************************************************************
-     FAVICON
-     ***********************************************************************-->
-        <!-- favicons all platforms --> <link rel="apple-touch-icon" sizes="57x57"         href="00-comres/11-resources/02-images/01-favicons/apple-icon-57x57.png">
-                                        <link rel="apple-touch-icon" sizes="60x60"         href="00-comres/11-resources/02-images/01-favicons/apple-icon-60x60.png">
-                                        <link rel="apple-touch-icon" sizes="72x72"         href="00-comres/11-resources/02-images/01-favicons/apple-icon-72x72.png">
-                                        <link rel="apple-touch-icon" sizes="76x76"         href="00-comres/11-resources/02-images/01-favicons/apple-icon-76x76.png">
-                                        <link rel="apple-touch-icon" sizes="114x114"       href="00-comres/11-resources/02-images/01-favicons/apple-icon-114x114.png">
-                                        <link rel="apple-touch-icon" sizes="120x120"       href="00-comres/11-resources/02-images/01-favicons/apple-icon-120x120.png">
-                                        <link rel="apple-touch-icon" sizes="144x144"       href="00-comres/11-resources/02-images/01-favicons/apple-icon-144x144.png">
-                                        <link rel="apple-touch-icon" sizes="152x152"       href="00-comres/11-resources/02-images/01-favicons/apple-icon-152x152.png">
-                                        <link rel="apple-touch-icon" sizes="180x180"       href="00-comres/11-resources/02-images/01-favicons/apple-icon-180x180.png">
-                                        <link rel="icon" type="image/png" sizes="192x192"  href="00-comres/11-resources/02-images/01-favicons/android-icon-192x192.png">
-                                        <link rel="icon" type="image/png" sizes="32x32"    href="00-comres/11-resources/02-images/01-favicons/favicon-32x32.png">
-                                        <link rel="icon" type="image/png" sizes="96x96"    href="00-comres/11-resources/02-images/01-favicons/favicon-96x96.png">
-                                        <link rel="icon" type="image/png" sizes="16x16"    href="00-comres/11-resources/02-images/01-favicons/favicon-16x16.png">
-                                        <link rel="manifest"                               href="00-comres/11-resources/02-images/01-favicons/manifest.json">
-                                        <meta name="msapplication-TileColor" content="#ffffff">
-                                        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-                                        <meta name="theme-color" content="#ffffff">
-
-
-<!-- **************************************************************************
-     HEAD SCRIPT AREA
-     ***********************************************************************-->
-        <!-- jQuery Library -->         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <!-- Waypoints (sticky nav) --> <script src="00-comres/21-global/05-js/jquery.waypoints.min.js" defer></script>
-        <!-- Hyphenator -->             <script src="00-comres/21-global/05-js/hyphenator.js" defer></script>
-        <!-- Lightbox                   <script src="00-comres/21-global/05-js/lightbox.js" defer></script>-->
-        <!-- Prettify (main)            <script src="00-comres/21-global/05-js/run_prettify.js?autoload=true&lang=css" defer></script>-->
-        <!-- MathJax                    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"  defer></script>-->
-        <!-- PS main script -->         <script src="00-comres/11-resources/05-js/script.js" defer></script>
-                                                                <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
-        <!-- PS local scroll script --> <script src="11-mgh-web/01-pages/00-00/05-local-js/scroll.js" defer></script>
-
-
-
-<!-- **************************************************************************
-     PRELOAD CSS IMAGES ../02-images/bottom-circuit-04.webp
-     ***********************************************************************-->
-                                    <link rel="preload" fetchpriority="high" as="image" href="https://masteringgithub.com/00-comres/11-resources/02-images/branch-bg-005.svg" type="image/svg">
-                                    <link rel="preload" fetchpriority="high" as="image" href="https://masteringgithub.com/00-comres/11-resources/02-images/bottom-circuit-04.webp" type="image/webp">
-
-
-
-<!-- **************************************************************************
-     HEAD CSS LOAD
-     ***********************************************************************-->
-        <!-- Load PS fonts -->          <link rel="stylesheet" type="text/css" href="00-comres/21-global/03-fonts/ps-fonts.css">
-        <!-- Load TIA fonts -->         <link rel="stylesheet" type="text/css" href="00-comres/21-global/03-fonts/tia-fonts.css">
-        <!-- Load Google fonts -->      <link rel="preconnect" href="https://fonts.googleapis.com/">
-                                        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-                                        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
-        <!-- Normalise -->              <link rel="stylesheet" type="text/css" href="00-comres//21-global/01-css/normalise.css">
-        <!-- Lightbox styles -->        <link rel="stylesheet" type="text/css" href="00-comres/21-global/01-css/lightbox.css">
-        <!-- Ionicons -->               <link rel="stylesheet" type="text/css" href="00-comres/21-global/01-css/ionicons.min.css">
-        <!-- PS grid system -->         <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/grid.css">
-        <!-- PS main styles -->         <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/style.css">
-        <!-- PAL styles -->             <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/style-pal.css">
-        <!-- MGH styles -->             <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/style-mgh.css">
-                                                                <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
-        <!-- Code frag highlights       <link rel="stylesheet" type="text/css" href="11-mgh-web/01-pages/00-00/01-local-css/codelines.css">-->
-
-<!--  **************************************************************************
-      Schema data
-      ***********************************************************************-->
-                                        <script type="application/ld+json">
-                                        {
-                                            "@context": "https://schema.org",
-                                            "@type": "EducationalOrganization",
-                                            "name": "Mastering GitHub",
-                                            "url": "https://masteringgithub.com/",
-                                            "sameAs": [],
-                                            "description": "Free, project-based tutorials teaching Git and GitHub for beginners.",
-                                            "logo": "https://masteringgithub.com/00-comres/11-resources/02-images/mgh-logo_07.svg",
-                                            "founder": {
-                                            "@type": "Person",
-                                            "name": "Michael Gledhill"
-                                            },
-                                            "educationalCredentialAwarded": "Project-Based GitHub Mastery"
-                                        }
-                                        </script>
-
-
-<!--  **************************************************************************
-      GOOGLE ANALYTICS
-      ***********************************************************************-->
-                                        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP866HBPND"></script>
-                                        <script>
-                                        window.dataLayer = window.dataLayer || [];
-                                        function gtag(){dataLayer.push(arguments);}
-                                        gtag('js', new Date());
-
-                                        gtag('config', 'G-FP866HBPND');
-                                        </script>
-
-
-<!-- **************************************************************************
-     TITLE
-     ***********************************************************************-->
-        <title>Mastering GitHub: Project-Based Learning for Beginners</title>
-    </head>
+    <!-- **************************************************************************
+         TITLE
+         ***********************************************************************-->
+    <title>Mastering GitHub: Project-Based Learning for Beginners</title>
+</head>
 
 <body>
-
 
 <!-- **************************************************************************
      HEADER (TOP BANNER — HERO, TITLE & LOGO)
      ***********************************************************************-->
-
 <div class="hero" id="js--000000">
 
-<!-- ************************************************************************** [WP TOPNAV]
-     TOP NAVIGATION (ABOVE CONTENTS LIST)
-     ***********************************************************************-->
-
-    <nav class="nav-cover">                                     <!-- Start of top nav bar     -->
-        <div class="top-nav">                                   <!-- Start of top nav row     -->
-            <div class="rg-row">                                <!-- Start of nav button row  -->
+    <!-- ************************************************************************** [WP TOPNAV]
+         TOP NAVIGATION (ABOVE CONTENTS LIST)
+         ***********************************************************************-->
+    <nav class="nav-cover">
+        <div class="top-nav">
+            <div class="rg-row">
                 <!-- Button 01 - Previous Section -->
                 <div class="nav-wide" ></div>
                 <!-- Button 02 - Previous Chapter -->
@@ -197,151 +177,130 @@ Date          Issue        Author         Reason for Modification
                 <a class="nav-wide" href="./11-web/01-00-introduction.html#js--000000"><span class="top-nav-text">Next chapter</span><span class="top-nav-icon">d</span></a>
                 <!-- Button 05 - Next section -->
                 <a class="nav-wide" href="./11-web/01-00-introduction.html#js--000000"><span class="top-nav-text">Next section</span><span class="top-nav-icon">r</span></a>
-            </div>                                              <!-- End of nav button row    -->
-        </div>                                                  <!-- End of top nav row       -->
-    </nav>                                                      <!-- End of top nav bar       -->
-<!-- ========================================================================== [WP END]      -->
+            </div>
+        </div>
+    </nav>
 
-
-<!-- ************************************************************************** [WP 000002]
-     MASTHEAD IMAGE
-     ***********************************************************************-->
-            
+    <!-- ************************************************************************** [WP 000002]
+         MASTHEAD IMAGE
+         ***********************************************************************-->
     <div class="rg-row masthead-row">
         <div class="cover-title">
             <h1>Mastering<br><span class="cover-resize">GITHUB</span></h1>
         </div>
     </div>
-    
-<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      COVER IMAGE
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="rg-row">                                        <!-- Start of title row       -->
-        <div class="rg-col rg-span1-1">                         <!-- Start of title           -->
-            <div class="fig-row" style="text-align: center; margin-top: 0.1rem;">
-<!-- Image -->  <figure class="fig-col fig1-1" id="js--f00-01">
-                    <img style="max-width:450px" src="00-comres/11-resources/02-images/mgh-logo_06.svg" alt="Cover Image">
-                </figure>
-            </div>                                              <!-- END OF FIGURE            -->
-        </div>                                                  <!-- End of title             -->
-    </div>                                                      <!-- End of title row         -->
-            
 
+    <!-- COVER IMAGE -->
     <div class="rg-row">
         <div class="rg-col rg-span1-1">
-            <div style="margin-top: 0;"></div>                <!-- Overline bar             -->
-            <div class="cover-title">
-                <h2>From first commit to expert user</h2>
-        <!-- Doc Title Lrg -->  <h3>Your Easy Guide to understanding Git and GitHub with VS Code</h3>
-                        <div style="text-align: center;">
-                            <a href="./11-mgh-web/00-01-main.html" class="btn btn-full utx">Start Mastering GitHub</a>
-                        </div>
+            <div class="fig-row" style="text-align: center; margin-top: 0.1rem;">
+                <figure class="fig-col fig1-1" id="js--f00-01">
+                    <img style="max-width:450px" src="00-comres/11-resources/02-images/mgh-logo_06.svg" alt="Cover Image">
+                </figure>
             </div>
         </div>
     </div>
-    <div class="fig-row" style="text-align: center; max-height: 100px;">
-<!-- Image -->  <figure class="fig-col fig1-1" id="js--f00-02" style="margin-bottom: 0; padding-bottom: 0;">
-                    <img  src="00-comres/11-resources/02-images/hero-curve-002.svg" alt="Hero curve">
-                </figure>
-    </div>                                                      <!-- END OF FIGURE            -->
-                     
-<!-- ========================================================================== -->
-</div>                                                          <!-- End of header            -->
-<!-- ========================================================================== [WP END]      -->
 
+    <div class="rg-row">
+        <div class="rg-col rg-span1-1">
+            <div style="margin-top: 0;"></div>
+            <div class="cover-title">
+                <h2>From first commit to expert user</h2>
+                <h3>Your Easy Guide to understanding Git and GitHub with VS Code</h3>
+                <div style="text-align: center;">
+                    <a href="./11-mgh-web/00-02-about.html" class="btn btn-full utx">Start Mastering GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fig-row" style="text-align: center; max-height: 100px;">
+        <figure class="fig-col fig1-1" id="js--f00-02" style="margin-bottom: 0; padding-bottom: 0;">
+            <img src="00-comres/11-resources/02-images/hero-curve-002.svg" alt="Hero curve">
+        </figure>
+    </div>
+</div>
 
 <!-- ************************************************************************** [WP FIXEDNAV]
      FIXED NAVIGATION BAR CHANGEOVER POINT
      ***********************************************************************-->
-<div id="js--fixed-nav"></div>                                  <!-- fixed navigation point   -->
-<!-- ========================================================================== [WP END]      -->
-     
+<div id="js--fixed-nav"></div>
 
 <!-- ************************************************************************** [WP LEADIN]
      HEADLINE AREA   (SANS FONT)
      ***********************************************************************-->
-     
-<div class="section-std" id="js--000100">                   <!-- Start of section         -->
+<div class="section-std" id="js--000100">
 
-    <div class="rg-row">                                        <!-- Headline row             -->  
+    <div class="rg-row">
         <div class="rg-col rg-span1-4">
             <img style="width:100%; max-width: 250px; border-radius: 10%" src="00-comres/11-resources/02-images/GitHub-logo.svg" alt="Cover Image">
-        </div>           <!-- Left column (not used)   -->
+        </div>
 
         <div class="rg-col rg-span3-4" style="vertical-align: middle;">
-            <p class="nohyp sans" ><span class="all-caps sans-head-b">Learn how to use GitHub</span><br><span class="hypoff">GitHub is a cloud-based platform used by software developers to store, share, and collaborate on software projects using Git. It acts as a central hub for managing code repositories, tracking changes, and facilitating team-based development.</span></p>
-            <p class="sans" ><span class="hypoff">GitHub is the platform of choice for version controlled software development. This website will take you through everything you need to know about GitHub.</span></p>
-
+            <p class="nohyp sans"><span class="all-caps sans-head-b">Learn how to use GitHub</span><br><span class="hypoff">GitHub is a cloud-based platform used by software developers to store, share, and collaborate on software projects using Git. It acts as a central hub for managing code repositories, tracking changes, and facilitating team-based development.</span></p>
+            <p class="sans"><span class="hypoff">GitHub is the platform of choice for version controlled software development. This website will take you through everything you need to know about GitHub.</span></p>
         </div>
-    </div>                                                      <!-- End of Headline row      -->
+    </div>
 
-
-    <div class="rg-row" style="margin-top: 4rem">               <!-- Headline row             --> 
+    <div class="rg-row" style="margin-top: 4rem">
         <div class="rg-col rg-span1-4 narrow">
             <img style="width:100%; max-width: 250px; border-radius: 10%" src="00-comres/11-resources/02-images/git-logo.svg" alt="Cover Image">
         </div>
 
         <div class="rg-col rg-span3-4 wide-left">
-            <p class="sans" ><span class="all-caps sans-head-b">Understand how it links to Git</span><br><span class="hypoff">Git is the most popular distributed version control system for tracking changes in files. A crucial tool for collaborative software development and project management.</span></p>
-            <p class="sans" ><span class="hypoff">Git is the engine behind GitHub. It is a fundamental component that underlies all GitHub repositories and their local copies.</span></p>
+            <p class="sans"><span class="all-caps sans-head-b">Understand how it links to Git</span><br><span class="hypoff">Git is the most popular distributed version control system for tracking changes in files. A crucial tool for collaborative software development and project management.</span></p>
+            <p class="sans"><span class="hypoff">Git is the engine behind GitHub. It is a fundamental component that underlies all GitHub repositories and their local copies.</span></p>
         </div>
-        <div class="rg-col rg-span1-4 wide" style="text-align: right;">                 <!-- Image column for wide screens -->
+
+        <div class="rg-col rg-span1-4 wide" style="text-align: right;">
             <img style="width:100%; max-width: 250px; border-radius: 10%" src="00-comres/11-resources/02-images/git-logo.svg" alt="Cover Image">
         </div>
-    </div>                                                      <!-- End of Headline row      -->
+    </div>
 
-
-
-    <div class="rg-row" style="margin-top: 4rem">               <!-- Headline row             --> 
+    <div class="rg-row" style="margin-top: 4rem">
         <div class="rg-col rg-span1-4">
             <img style="width:100%; max-width: 250px; border-radius: 10%" src="00-comres/11-resources/02-images/vscode-logo.svg" alt="Cover Image">
-        </div>           <!-- Left column (not used)   -->
-
-        <div class="rg-col rg-span3-4">                 <!-- Start of subtitle column -->
-            <p class="nohyp sans" ><span class="all-caps sans-head-b">Manage it all with VSCode</span><br><span class="hypoff"></span>VS Code is a free, lightweight, versatile code text editor with cross-platform support for writing, editing, and debugging code. It is complete with syntax highlighting, code completion and debugging tools.</p>
-            <p class="sans" ><span class="hypoff">VS Code is built to work with Git and GitHub. It has a graphical user interface that simplifies interactions with Git and effortlessly manages local and remote repositories.</span></p>
-
         </div>
-    </div>                                                      <!-- End of Headline row      -->
-    
 
+        <div class="rg-col rg-span3-4">
+            <p class="nohyp sans"><span class="all-caps sans-head-b">Manage it all with VSCode</span><br><span class="hypoff"></span>VS Code is a free, lightweight, versatile code text editor with cross-platform support for writing, editing, and debugging code. It is complete with syntax highlighting, code completion and debugging tools.</p>
+            <p class="sans"><span class="hypoff">VS Code is built to work with Git and GitHub. It has a graphical user interface that simplifies interactions with Git and effortlessly manages local and remote repositories.</span></p>
+        </div>
+    </div>
 
-    <div class="rg-row" style="margin-top: 4rem">               <!-- Headline row             --> 
+    <div class="rg-row" style="margin-top: 4rem">
         <div class="rg-col rg-span1-4 narrow">
             <img style="width:100%; max-width: 250px; border-radius: 10%" src="00-comres/11-resources/02-images/mgh-logo_07.svg" alt="Cover Image">
         </div>
 
         <div class="rg-col rg-span3-4 wide-left">
-            <p class="sans" ><span class="all-caps sans-head-b">What&apos;s the catch?</span><br><span class="hypoff">Well, there isn&apos;t one. <span class="sans-b">This site is completely free</span>, there is no registration or enrolment; there is also no advertising.</span></p>
-            <p class="sans" ><span class="hypoff">Everything is available to you free of charge, there is even a pdf of the whole website that you can download and use as you see fit.</span></p>
-            <p class="sans" ><span class="hypoff sans-b">Just click the button below to get going:</span></p>
-
+            <p class="sans"><span class="all-caps sans-head-b">What&apos;s the catch?</span><br><span class="hypoff">Well, there isn&apos;t one. <span class="sans-b">This site is completely free</span>, there is no registration or enrolment; there is also no advertising.</span></p>
+            <p class="sans"><span class="hypoff">Everything is available to you free of charge, there is even a pdf of the whole website that you can download and use as you see fit.</span></p>
+            <p class="sans"><span class="hypoff sans-b">Just click the button below to get going:</span></p>
         </div>
+
         <div class="rg-col rg-span1-4 wide" style="text-align: right;">
             <img style="width:100%; border-radius: 10%" src="00-comres/11-resources/02-images/mgh-logo_07.svg" alt="Cover Image">
         </div>
-    </div>                                                      <!-- End of Headline row      -->
+    </div>
 
-    <div class="rg-row">                                        <!-- Headline row             --> 
-        <div class="rg-col rg-span1-1" >
+    <div class="rg-row">
+        <div class="rg-col rg-span1-1">
             <div style="text-align: left; margin-bottom: 2rem;">
-                <a href="./11-mgh-web/00-01-main.html" class="btn btn-full utx">Start Mastering GitHub</a>
+                <a href="./11-mgh-web/00-02-about.html" class="btn btn-full utx">Start Mastering GitHub</a>
             </div>
         </div>
-    </div>                                                      <!-- End of Headline row      -->
+    </div>
 
-</div>                                                      <!-- End of section           -->
-<!-- ========================================================================== [WP END]      -->
-
+</div>
 
 <!--************************************************************************** [WP BANNER]
      BOTTOM BANNER
     ***********************************************************************-->
-
-<section class="section-std" id="js--990201b">                  <!-- Start of banner row      -->
+<section class="section-std" id="js--990201b">
     <div class="eop">
         <div class="eop-over-lay">
-            <div class="rg-row">                                <!-- Start of text area       -->
+            <div class="rg-row">
                 <div class="rg-col rg-span1-1">
                     <div class="eop-title"><h2>About this website:</h2></div>
                     <div class="eop-sans">
@@ -349,34 +308,70 @@ Date          Issue        Author         Reason for Modification
 
                         <p class="hypoff">Whether you&rsquo;re learning to code, building your first open-source project, or just want to track changes in your work, understanding Git and GitHub can dramatically improve your workflow.</p>
 
-                        <p class="hypoff"><span class="sans-b"> Mastering GitHub</span> is a completely free, beginner-friendly tutorial that simplifies the steep learning curve using real-world examples,  step-by-step lessons and project-based learning. You&rsquo;ll learn how to manage projects with GitHub confidently&mdash;even if you've never touched version control before.</p>
+                        <p class="hypoff"><span class="sans-b"> Mastering GitHub</span> is a completely free, beginner-friendly tutorial that simplifies the steep learning curve using real-world examples, step-by-step lessons and project-based learning. You&rsquo;ll learn how to manage projects with GitHub confidently&mdash;even if you've never touched version control before.</p>
 
                         <div style="text-align: left; margin-bottom: 2rem;">
                             <a href="./11-mgh-web/00-02-about.html" class="btnw btnw-full utx">Learn more...</a>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-
 <!--************************************************************************** [WP FOOTER]
      FOOTER
     ***********************************************************************-->
-    <footer class="rg-row">                                     <!-- Start of footer          -->
-    <div class="rg-col rg-span4-4 foot">                        <!-- Start of subtitle column -->
-        <ul class="footer-nav">                                 <!-- Start of footer nav      -->
+<footer class="rg-row">
+    <div class="rg-col rg-span4-4 foot">
+        <ul class="footer-nav">
             <li><a class="js--sc-000000" href="#js--000000"><span class="top-nav-icon" style="color:#1C2F4B">t</span>Top</a><span class="footer-spacer">&#x25C7;</span></li>
             <li><a href="./11-mgh-web/00-02-about.html">About</a><span class="footer-spacer">&#x25C7;</span></li>
             <li><a href="80-00-finally.html#js--800200">Contact</a><span class="footer-spacer">&#x25C7;</span></li>
             <li><a href="80-00-finally.html#js--800300">Terms</a><span class="footer-spacer">&#x25C7;</span></li>
-            <li><a href="80-00-finally.html#js--800400">Privacy</a></li>
-        </ul>                                                   <!-- End of footer nav        -->
+            <li><a href="80-00-finally.html#js--800400">Privacy</a><span class="footer-spacer">&#x25C7;</span></li>
+
+            <!-- ============================================================
+                 ADDED: Cookie settings link (reopens modal)
+                 ============================================================ -->
+            <li><a href="#" id="cookie-settings">Cookie settings</a></li>
+        </ul>
     </div>
-    </footer>                                                   <!-- End of footer            -->
-<!-- ========================================================================== [WP END]      -->
+</footer>
+
+<!-- ============================================================
+     ADDED: Cookie consent modal HTML
+     ============================================================ -->
+<div id="cookie-modal-backdrop" hidden>
+    <div id="cookie-modal" role="dialog" aria-modal="true"
+         aria-labelledby="cookie-title"
+         aria-describedby="cookie-modal-desc">
+        <header>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:0.75rem;">
+                <h2 id="cookie-title">Cookie preferences</h2>
+                <button id="cookie-close" type="button" aria-label="Close cookie preferences">Close</button>
+            </div>
+        </header>
+
+        <div class="body" id="cookie-modal-desc">
+            <p class="nohyp sans">This website uses cookies for anonymous analytics.</p>
+            <p class="nohyp sans">No analytics cookies are stored unless you consent.</p>
+            <p class="nohyp sans"><a class="xref" href="80-00-finally.html#js--800400">Read the privacy policy</a>.</p>
+        </div>
+
+        <div class="actions">
+            <button id="cookie-decline" type="button">Decline</button>
+            <button id="cookie-accept" type="button">Accept</button>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================
+     ADDED: Cookie consent modal logic (external JS)
+     Note: defer ensures it runs after DOM parsing.
+     ============================================================ -->
+<script src="00-comres/21-global/05-js/cookie-consent.js" defer></script>
 
 </body>
 </html>
