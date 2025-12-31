@@ -89,38 +89,44 @@ MASTERING GITHUB: Is authored by Michael Gledhill
     <!-- PS main styles -->         <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/style.css">
     <!-- PAL styles -->             <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/style-pal.css">
     <!-- MGH styles -->             <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/style-mgh.css">
-
-    <!-- ============================================================
-         ADDED: Cookie consent modal stylesheet (external)
-         ============================================================ -->
-    <link rel="stylesheet" href="00-comres/21-global/01-css/cookie-consent.css">
-
-    <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
+    <!-- Cookie consent -->         <link rel="stylesheet" type="text/css" href="00-comres/11-resources/01-css/cookie-consent.css">
+                                        <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
     <!-- Code frag highlights       <link rel="stylesheet" type="text/css" href="11-mgh-web/01-pages/00-00/01-local-css/codelines.css">-->
 
+
+
     <!--  **************************************************************************
-          Schema data
+          Schema data — Additional information for search engines
           ***********************************************************************-->
-    <script type="application/ld+json">
-    {
+        <script type="application/ld+json">
+        {
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
+        "@id": "https://masteringgithub.com/#org",
         "name": "Mastering GitHub",
         "url": "https://masteringgithub.com/",
-        "sameAs": [],
         "description": "Free, project-based tutorials teaching Git and GitHub for beginners.",
-        "logo": "https://masteringgithub.com/00-comres/11-resources/02-images/mgh-logo_07.svg",
-        "founder": {
-        "@type": "Person",
-        "name": "Michael Gledhill"
+        "logo": {
+            "@type": "ImageObject",
+            "@id": "https://masteringgithub.com/#logo",
+            "url": "https://masteringgithub.com/00-comres/11-resources/02-images/mgh-logo_07.svg"
         },
-        "educationalCredentialAwarded": "Project-Based GitHub Mastery"
-    }
+        "founder": {
+            "@type": "Person",
+            "name": "Michael Gledhill"
+        }
+        }
     </script>
 
-    <!-- ============================================================
-         ADDED: GA4 Consent Mode default (MUST be before GA loads)
-         ============================================================ -->
+
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      GOOGLE ANALYTICS
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!-- ============================================================
+        GA4 Cookie consent Mode default (MUST be before GA loads)
+        ============================================================ -->
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
@@ -135,14 +141,18 @@ MASTERING GITHUB: Is authored by Michael Gledhill
     }
     </script>
 
-    <!--  **************************************************************************
-          GOOGLE ANALYTICS
-          ***********************************************************************-->
+<!-- ============================================================
+        GA4 analytical content
+        ============================================================ -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FP866HBPND"></script>
     <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-FP866HBPND', { anonymize_ip: true });
+
+    gtag('config', 'G-FP866HBPND');
     </script>
+
 
     <!-- **************************************************************************
          TITLE
@@ -329,20 +339,16 @@ MASTERING GITHUB: Is authored by Michael Gledhill
             <li><a class="js--sc-000000" href="#js--000000"><span class="top-nav-icon" style="color:#1C2F4B">t</span>Top</a><span class="footer-spacer">&#x25C7;</span></li>
             <li><a href="./11-mgh-web/00-02-about.html">About</a><span class="footer-spacer">&#x25C7;</span></li>
             <li><a href="80-00-finally.html#js--800200">Contact</a><span class="footer-spacer">&#x25C7;</span></li>
-            <li><a href="80-00-finally.html#js--800300">Terms</a><span class="footer-spacer">&#x25C7;</span></li>
-            <li><a href="80-00-finally.html#js--800400">Privacy</a><span class="footer-spacer">&#x25C7;</span></li>
-
-            <!-- ============================================================
-                 ADDED: Cookie settings link (reopens modal)
-                 ============================================================ -->
-            <li><a href="#" id="cookie-settings">Cookie settings</a></li>
+            <li><a href="#" id="cookie-settings">Privacy &amp; settings</a></li><!-- Cookie consent-->
         </ul>
     </div>
 </footer>
 
-<!-- ============================================================
-     ADDED: Cookie consent modal HTML
-     ============================================================ -->
+
+
+<!--************************************************************************** [WP COOKIES]
+     Cookie consent banner — modal HTML
+    ***********************************************************************-->
 <div id="cookie-modal-backdrop" hidden>
     <div id="cookie-modal" role="dialog" aria-modal="true"
          aria-labelledby="cookie-title"
@@ -367,11 +373,11 @@ MASTERING GITHUB: Is authored by Michael Gledhill
     </div>
 </div>
 
-<!-- ============================================================
-     ADDED: Cookie consent modal logic (external JS)
+<!--************************************************************************** [WP COOKIES]
+     Cookie consent modal logic (external JS)
      Note: defer ensures it runs after DOM parsing.
-     ============================================================ -->
-<script src="00-comres/21-global/05-js/cookie-consent.js" defer></script>
+    ***********************************************************************-->
+<script src="../00-comres/11-resources/05-js/cookie-consent.js" defer></script>
 
 </body>
 </html>
