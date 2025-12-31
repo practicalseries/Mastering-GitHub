@@ -1,3 +1,38 @@
+/* MASTERING GITHUB (c) 2025
+
+*******************************************************************************
+Title:              MASTERING GITHUB                          COOKIE-CONSENT.JS
+*******************************************************************************
+
+MASTERING GITHUB:   Is authored by Michael Gledhill 
+                    and published by the Practical Series of Publications
+                    Published in the United Kingdom
+
+                    Email: mg@masteringgithub.com
+                    Web:   https://masteringgithub.com
+
+-------------------------------------------------------------------------------
+DETAILS
+
+This style sheet provides the JS logic for a modal cookie consent banner (and 
+footer link).
+
+This banner is necessary for GDPR compliance and will disable Google analytics
+cookies (the only cookies on the website
+-------------------------------------------------------------------------------
+
+
+*******************************************************************************
+MODIFICATION HISTORY:
+
+This is a complete summary of all software modifications.
+
+Date           Issue       Author         Reason for Modification
+-------------------------------------------------------------------------------
+31 Dec 2025    001.000      M. Gledhill   File created
+---------------------------------------------------------------------------- */
+
+
 /* =========================================================
    Cookie consent modal logic (GA4 Consent Mode)
    ========================================================= */
