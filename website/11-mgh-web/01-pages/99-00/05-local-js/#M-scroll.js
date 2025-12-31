@@ -94,9 +94,13 @@ $(document).ready(function() {                  /* START OF PAGE READY FUNCTION 
        $('html, body').animate({scrollTop: $('#js--000000').offset().top -80}, 1000);
     });
    ------------------------------------------------------------------------- */
-   $('.js--sc-000000').click(function () {
-       $('html, body').animate({scrollTop: $('#js--000000').offset().top -80}, 1000);
-    });                                         /* END of scroll function */
+   $('.js--sc-000000').on('click', function (e) {
+      e.preventDefault(); // stops the instant jump
+      $('html, body').stop().animate(
+         { scrollTop: $('#js--000000').offset().top - 80 },
+         1000
+      );
+   });                                        /* END of scroll function */
 
 
  /* ---------------------------------------------------------------------------

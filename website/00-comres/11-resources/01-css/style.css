@@ -2561,6 +2561,18 @@ tr.in-no-border th {                        /* incidental table no-bottom border
     background-color: #fbfbfb;
 }
 
+/* ****************************************************************************
+   VIDEO-CONTAINER
+   ****************************************************************************
+   The video container is used to ensure the video tag spans the widht of the
+   container
+   ************************************************************************* */
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+
 
 /* ****************************************************************************
    FOOTER
