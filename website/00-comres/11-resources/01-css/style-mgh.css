@@ -231,9 +231,15 @@ Date           Issue       Author         Reason for Modification
     margin-bottom: 0.3rem;
     vertical-align: top;
 }
-.toc-2-text{
+.toc-l2-text{
     display: inline-block;
     width: 64%;
+    margin-bottom: 0.2rem;
+    vertical-align: top;
+}
+.toc-l2-text-full{
+    display: inline-block;
+    width: 85.5%;
     margin-bottom: 0.2rem;
     vertical-align: top;
 }
@@ -259,6 +265,13 @@ Date           Issue       Author         Reason for Modification
     margin-bottom: 0.2rem;
     vertical-align: top;
 }
+.toc-l5-text{
+    display: inline-block;
+    font-size: 0.55rem;
+    width: 80%;
+    margin-bottom: 0.2rem;
+    vertical-align: top;
+}
 
 .toc-lhome-pad{margin-left: 14.5%;}
 
@@ -271,6 +284,10 @@ Date           Issue       Author         Reason for Modification
     width:34.5%
 }
 
+.toc-l5-pad{
+    display: inline-block;
+    width:18%
+}
 
 .toc-left-gap{
     margin-top: 0.5rem;
